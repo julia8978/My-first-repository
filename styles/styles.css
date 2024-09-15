@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Bad Script", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgb(245, 211, 223);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 10px;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 20px 20px;
+}
+
+.image {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me-content__description {
+  list-style-type: none;
+  font-weight: 600;
+}
+.about-me-content__description li::before {
+  content: "🤍 ";
+}
+
+@media screen and (max-width: 700px) {
+  .about-me-content {
+    flex-direction: column;
+  }
+}
+.about-me__subtitle {
+  margin: 10px;
+}
+.about-me img {
+  max-width: 375px;
+  border-radius: 10%;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .about-me img {
+    margin-right: 0;
+  }
+}
+.subtitle {
+  background-color: rgb(245, 157, 189);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+.gallery .gallery__item {
+  width: 384px;
+}
+.gallery .gallery__item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .gallery__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.social-links__item:not(:last-of-type) {
+  margin-right: 10px;
+}
+.social-links__item {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  color: black;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.social-links__item:hover {
+  transform: scale(1.5);
+}
+.social-links__item i {
+  font-size: 40px;
+}/*# sourceMappingURL=styles.css.map */

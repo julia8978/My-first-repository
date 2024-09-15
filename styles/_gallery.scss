@@ -1,0 +1,16 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+
+    .gallery__item {
+        width: 384px;
+
+        & img {
+            object-fit: cover;
+        }
+    }
+    
+    .gallery__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}

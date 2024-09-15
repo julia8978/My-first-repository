@@ -1,0 +1,17 @@
+.about-me {
+    &__subtitle {
+        margin: 10px;
+    }
+
+    & img {
+        max-width: 375px;
+        border-radius: 10%;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-me img {
+        margin-right: 0;
+    }
+}
